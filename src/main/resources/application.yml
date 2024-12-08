@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: redis-jwt-cache
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db
+    username: postgres
+    password: example
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: 'true'
+    hibernate:
+      ddl-auto: update
+
+security:
+  jwt:
+    secret-key: JIoQHLOJNs9d23CZ2Wa9lbOgrviwHBhgqja95W1cr+xzGFROKyFv4Q4y3qV1r0u/h8olZwEV2VBcmwDYs3yR8Jff3geGmJ512qT9RPOfVbTQfwrhw2HH6y3N2GrWK0h1TC6n8ar0oOTjE7B/4YVU0bFEzpuRTWK+K4VX/e+yBHj6L15Lo/4UO83BEoG2s1DLz+aoqMWoldByQg8VwnHWBBg5pmVxd+G2SLRucCLg4JRDY9DDx3OUSZUSsRXrEC6cGqWbyVrVSgMOqRiP3MSqNwYYfISB0vir2F09dPm4kVn3h5Pv3SMI3CGJyDYAnUVbDMQVdGeBnDSQiP/PIGUDTA==
